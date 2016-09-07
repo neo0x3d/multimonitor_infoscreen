@@ -14,14 +14,14 @@ Display webpages on multiple physical monitors using Firefox profiles and xdotoo
 
     Each physical display is assigned to a Firefox profile
 
-    1. Close all Firefox windows, start Firefox ProfileManager via:
-    ```bash
-    $ firefox -ProfileManager
-    ```
-    1. Add one profile for each physical display (name it e.g. ffp1...ffpx)
-    1. Start ProfileManager again, select one pofile, start Firefox
-      1. Install an auto reloading Add-On if needed, e.g. https://addons.mozilla.org/de/firefox/addon/tab-auto-reload/ or https://addons.mozilla.org/en-us/firefox/addon/reloadevery/
-      1. Disable close notification (trying to close multiple tabs)
+    * Close all Firefox windows, start Firefox ProfileManager via:
+        ```bash
+        $ firefox -ProfileManager
+        ```
+    * Add one profile for each physical display (name it e.g. ffp1...ffpx)
+    * Start ProfileManager again, select one pofile, start Firefox
+      * Install an auto reloading Add-On if needed, e.g. https://addons.mozilla.org/de/firefox/addon/tab-auto-reload/ or https://addons.mozilla.org/en-us/firefox/addon/reloadevery/
+      * Disable close notification (trying to close multiple tabs)
 
 1. Setup displays as extended workspace in your desktop environment
 
@@ -29,33 +29,30 @@ Display webpages on multiple physical monitors using Firefox profiles and xdotoo
 
     If the come properly up or will stay powered the whole time, skip this.
 
-    1. Obtain arandr from https://christian.amsuess.com/tools/arandr/.
-    1. Start arandr, arrange all displays as extended workspace, save the configuration as shell script
+    * Obtain arandr from https://christian.amsuess.com/tools/arandr/.
+    * Start arandr, arrange all displays as extended workspace, save the configuration as shell script
 
-TODO: write udev rule to rearrange monitors
+    TODO: write udev rule to rearrange monitors
 
 
 1. Setup infoscreen.sh
 
-    Clone from Github to local folder
+    Clone from Github to local folder:
 
     ```bash
-    $ git clone https://github.com/neo0x3d/infoscreen
-    $ sudo mv infoscreen /opt/infoscreen
+$ git clone https://github.com/neo0x3d/infoscreen
+$ sudo mv infoscreen /opt/infoscreen
     ```
 
-    1. Change the number of sections in the script
-    1. In each section set the Firefox profile name, horizontal location, URL and name to search
+    * Change the number of sections in the script
+    * In each section set the Firefox profile name, horizontal location, URL and name to search
 
 1. Add to cronjob
 
-TODO: write cronjob (run as specific user) instructions
+    TODO: write cronjob (run as specific user) instructions
 
 1. Add script to the startup application in your auto logged in user session
 
-## History
-
-v1.0 initial release
 
 ## License
 
