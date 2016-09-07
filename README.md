@@ -15,6 +15,7 @@ Display webpages on multiple physical monitors using Firefox profiles and xdotoo
     Each physical display is assigned to a Firefox profile
 
     * Close all Firefox windows, start Firefox ProfileManager via:
+    
         ```bash
         $ firefox -ProfileManager
         ```
