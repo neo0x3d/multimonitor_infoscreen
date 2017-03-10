@@ -1,4 +1,8 @@
 # multimonitor_infoscreen
+
+# This project has been moved to Gitlab: <https://gitlab.com/users/neo0x3d/projects>
+
+
 Display webpages on multiple physical monitors using Firefox profiles and xdotool
 
 ## Required packages
@@ -15,7 +19,7 @@ Display webpages on multiple physical monitors using Firefox profiles and xdotoo
     Each physical display is assigned to a Firefox profile
 
     * Close all Firefox windows, start Firefox ProfileManager via:
-    
+
         ```bash
         $ firefox -ProfileManager
         ```
